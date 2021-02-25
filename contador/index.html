@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <main>
+        <h1>contador</h1>
+
+        <div id='di'> </div>
+
+        <div id='divv'>
+            0
+        </div>
+
+
+        <div class="contairne">
+            <button class='btn' onclick="add()">add</button>
+            <button class='btn' onclick="sub()">sub</button>
+        </div>
+    </main>
+
+    <script>
+
+        const btn = document.querySelector('.btn')
+        const move = document.querySelector('#divv')
+        let m = parseInt(move.innerText)
+
+
+        btn.addEventListener("click", event => {
+            event.preventDefault();
+            move.classList.add('mudar');
+
+        });
+
+        function add() {
+            m++
+            render()
+            console.log(m)
+        }
+        function sub() {
+            m--
+            render()
+            if (m < 0) {
+                m = 0
+                render()
+            }
+        }
+
+        function render() {
+            move.innerText = m
+
+        }
+
+    </script>
+</body>
+<footer>
+    <a class="whatsapp"href="https://web.whatsapp.com/send?phone=47991629619" target="-blank">
+     <i class="fa fa-whatsapp"></i>
+    </a>
+  
+</footer>
+
+</html>
