@@ -16,9 +16,6 @@ main{
 }
 
 
-
-
-
 h1{
     text-align: center;
     font-family: 'Arial', sans-serif;
@@ -40,7 +37,6 @@ h1{
     width: 200px;
     margin:auto;
     margin-left:50%;
-    top:50%;
     transform: translateX(-50%) translateY(50%);
     border-radius: 0.5rem;
     box-shadow: 0px 4px 8px 0 rgb(116, 111, 111), 0 6px 20px 0 rgb(70, 68, 68);
@@ -51,7 +47,7 @@ h1{
 
 .contairne{
  text-align: center;
- margin-top: 6rem;
+ margin-top: 20vh;
  margin-bottom: 5rem ;
 
 
@@ -64,6 +60,7 @@ button{
     background-color: grey;
     text-decoration: none;
     width: 80px;
+
     
   
 }
@@ -75,7 +72,7 @@ button:hover{
 #divv{
     font-size:40px;
    margin-top: -1.4rem;
-   animation-iteration-count:ease-in; 
+   animation-iteration-count:ease-in;
 }
 .whatsapp{
     position:fixed;
